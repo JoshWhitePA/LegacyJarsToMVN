@@ -51,11 +51,11 @@ var processJSON = function(jsonData){
     
 };
 var searchMVN = function(hashValue){
-   var url = "http://search.maven.org/solrsearch/select?q=1:%22"+hashValue+"%22&rows=20&wt=json";
+   var url = "https://search.maven.org/solrsearch/select?q=1:%22"+hashValue+"%22&rows=20&wt=json";
    console.log(url);
    $.ajax({
     dataType: "json",
-    url: "http://search.maven.org/solrsearch/select",
+    url: "https://search.maven.org/solrsearch/select",
     data: {
         q:"1:%22"+hashValue+"%22",
         rows:"20",
