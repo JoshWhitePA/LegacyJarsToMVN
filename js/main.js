@@ -54,7 +54,7 @@ var searchMVN = function(hashValue){
    var url = "https://search.maven.org/solrsearch/select?q=1:%22"+hashValue+"%22&rows=20&wt=json";
    console.log(url);
    $.ajax({
-    dataType: "json",
+    dataType: "jsonp",
     url: "https://search.maven.org/solrsearch/select",
     data: {
         q:"1:%22"+hashValue+"%22",
