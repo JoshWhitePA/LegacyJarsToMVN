@@ -55,7 +55,7 @@ var searchMVN = function(hashValue){
    console.log(url);
    $.ajax({
     dataType: "jsonp",
-    url: "https://search.maven.org/solrsearch/select",
+    url: "https://crossorigin.me/https://search.maven.org/solrsearch/select",
     data: {
         q:"1:%22"+hashValue+"%22",
         rows:"20",
